@@ -11,6 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Extract ASTRA project
+        run: |
+          unzip -q ASTRA_Tactical_Phone_Only.zip
+          cp -r ASTRA_Tactical_Android/app .
+          cp ASTRA_Tactical_Android/settings.gradle .
+          cp ASTRA_Tactical_Android/build.gradle .
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
