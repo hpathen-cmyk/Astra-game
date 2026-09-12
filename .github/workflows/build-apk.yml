@@ -13,7 +13,7 @@ jobs:
 
       - name: Extract ASTRA project
         run: |
-          unzip -q ASTRA_Tactical_Phone_Only.zip
+          unzip -q ASTRA_Tactical_Android_Project.zip
           cp -r ASTRA_Tactical_Android/app .
           cp ASTRA_Tactical_Android/settings.gradle .
           cp ASTRA_Tactical_Android/build.gradle .
